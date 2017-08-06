@@ -1,5 +1,5 @@
 node_modules
 bower_components
-public_html/js/bower.min.js
-public_html/js/bower.js
-public_html/css/bower.min.css
+src/js/bower.min.js
+src/js/bower.js
+src/css/bower.min.css

@@ -7,17 +7,17 @@ var js_files = [
 	"bower_components/jquery/dist/jquery.js",
 	"bower_components/isotope/dist/isotope.pkgd.js",
 	"bower_components/infinite-scroll/dist/infinite-scroll.pkgd.js",
-	"public_html/js/script.js"
+	"src/js/script.js"
 ];
 
 gulp.task("concatJS",function(cb){
 	return gulp.src(js_files)
 		.pipe(concat("bower.js"))
-		.pipe(gulp.dest("public_html/js/"));
+		.pipe(gulp.dest("src/js/"));
 });
 
 gulp.task("watchJS",["concatJS"],function(){
-	gulp.watch("public_html/js/script.js",["concatJS"]);
+	gulp.watch("src/js/script.js",["concatJS"]);
 });
 
 gulp.task("default",function(){
