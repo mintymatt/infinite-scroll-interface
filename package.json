@@ -1,0 +1,23 @@
+{
+  "name": "infinite-scroll-interface",
+  "version": "1.0.0",
+  "description": "An interface for infinite-scroll and isotope",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mintymatt/infinite-scroll-interface.git"
+  },
+  "author": "Matthew Spence <admin@matt-spence.com> (https://matt-spence.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mintymatt/infinite-scroll-interface/issues"
+  },
+  "homepage": "https://github.com/mintymatt/infinite-scroll-interface#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1"
+  }
+}

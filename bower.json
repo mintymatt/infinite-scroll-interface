@@ -1,0 +1,23 @@
+{
+  "name": "infinite-scroll-interface",
+  "description": "An interface for infinite-scroll and isotope",
+  "main": "index.js",
+  "authors": [
+    "Matthew Spence <admin@matt-spence.com> (https://matt-spence.com)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mintymatt/infinite-scroll-interface",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "infinite-scroll": "^3.0.1",
+    "jquery": "^3.2.1",
+    "isotope": "^3.0.4"
+  }
+}
