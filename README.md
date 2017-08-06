@@ -11,4 +11,4 @@ setup:
 
 * run `npm install`
 * run `bower install`
-* run `gulp`
+* run `gulp` (prints options)
