@@ -9,6 +9,10 @@
 	<section class="isi-container">
 		
 	</section>
+	<section class="console">
+		<input type="text" id="command" value="$('.isi-container').isi({url:'handler.php'})"/>
+		<button onclick="eval($('#command').val())">Execute</button>
+	</section>
 	<script src="js/bower.js"></script>
 </body>
 </html>
