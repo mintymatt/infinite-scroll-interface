@@ -5,6 +5,7 @@ Requirements:
 
 * node.js
 * npm package manager
+* server with PHP and MySQL support.
 
 setup:
 
