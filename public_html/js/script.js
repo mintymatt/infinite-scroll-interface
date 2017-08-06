@@ -3,7 +3,9 @@
 		$.fn.isi.options = $.extend({descriptor:this},$.fn.isi.options,data);
 		var status = $.fn.isi.isValid();
 		if ($.fn.isi.options.debug && status!=true){
-			console.error(status);
+			$.each(status,function(i,e){
+				console.error("Missing "+e);
+			});
 		}
 		return;
 	};
@@ -42,6 +44,7 @@
 				url: $.fn.isi.options.url,
 				data: $fn.isi.data(),
 				success: function(callback){
+					console.log(callback);
 					var json = JSON.parse(callback);
 					if (json.finished){
 						$.fn.isi.options.finished = true;
@@ -58,7 +61,7 @@
 		console.log(json);
 	};
 	$.fn.isi.data = function(){
-		return {start:$.fn.isi.getStart(),amount:$.fn.isi.getAmount};
+		return {start:$.fn.isi.getStart(),amount:$.fn.isi.getAmount()};
 	}
 	//default settings.
 	$.fn.isi.options = {
