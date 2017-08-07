@@ -10,9 +10,22 @@
 		
 	</section>
 	<section class="console">
-		<input type="text" id="command" value="$('.isi-container').isi({url:'handler.php'})"/>
-		<button onclick="eval($('#command').val())">Execute</button>
+		<div class="log"></div>
+		<input type="text" id="command" value="$('.isi-container').isi({url:'handler.php'})" onkeydown="" />
+		<button id="command-submit" onclick="">Execute</button>
 	</section>
 	<script src="js/bower.js"></script>
+	<script>
+		function execute(){
+			eval($('#command').val());$('.log').append($('#command').val()+'<br>');$('#command').val('');$('.log').animate({scrollTop: $('.log').prop('scrollHeight')});
+		}
+		$('#command-submit').on("click",execute);
+		$('#command').on("keydown",function(e){
+			if (e.keyCode==13){
+				execute();
+			}
+		});
+	</script>
 </body>
 </html>
+

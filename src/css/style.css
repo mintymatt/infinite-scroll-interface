@@ -8,6 +8,14 @@ html,body {
 	bottom: 10px;
 	left: 10px;
 	margin: auto;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.2);
+}
+.console .log {
+	max-height: 50px;
+	padding: 5px;
+	color: grey;
+	overflow: auto;
 }
 #command {
 	width: 500px;
